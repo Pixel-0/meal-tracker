@@ -1,0 +1,44 @@
+
+ <div class="container">
+   <div class="row">
+     <div class="col-md-6 one" >
+        <h2>New Meal</h2>
+      
+                <div class>
+                  <label>Meal:</label>
+                  <div >
+                    <input #MealName>
+                  </div>
+                </div>
+                <div >
+                  <label  for="">Description:</label>
+                  <div >
+                    <input  #MealDesc>
+                  </div>
+                </div>
+                <div >
+                  <label  for="">Calories:</label>
+                  <div >
+                    <input  #MealCalories>
+                  </div>
+                </div>
+
+                <div >
+                  <div >
+
+                    <br>
+                    <button (click)="
+                    AddClicked(MealName.value, MealDesc.value, MealCalories.value);
+                    MealName.value = '';
+                    MealDesc.value = '';
+                    MealCalories.value = '';
+                    " class="btn btn-danger">Add Meal</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img class="img" src="https://wallpapercave.com/wp/wp2324457.jpg" alt="" width="400px">
+              </div>
+              </div>
+    </div>
+    <hr>

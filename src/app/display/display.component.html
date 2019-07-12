@@ -1,0 +1,43 @@
+<div class="container">
+  <h2>List of Meals</h2>
+<div class="row">
+  <h4>Level of Calories to Display: </h4>
+  <select (change)="onChange($event.target.value)">
+    <option value="all" selected="selected">Show All</option>
+    <option value="high">Calories > 500</option>
+      <option value="low">Calories > 500</option>
+  </select>
+</div>
+
+<hr>
+
+
+<div *ngFor="let currentMeal of childMealList | caloriesLevel:selectedCaloriesLevel" class="row">
+
+  <div class="">
+    <div class="">
+        <div class="food-edit">
+            <div class="njoro">
+              <h5>{{currentMeal.name }}</h5>
+            </div>
+            <div class="njoro">
+              <h5>{{ currentMeal.description }}</h5>
+            </div>
+            <div class="njoro">
+              <h5>{{ currentMeal.calories}}</h5>
+            </div>
+    </div>
+      <div class="row">
+
+        <div class="njoro">
+          <button (click)="editButtonHasBeenClicked(currentMeal)">Edit</button>
+        </div>
+        <div class=njoro>
+          <button (click)="deleteButtonHasBeenClicked(currentMeal)">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+

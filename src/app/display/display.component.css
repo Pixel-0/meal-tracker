@@ -1,0 +1,11 @@
+.row{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: beige;
+}
+.food-edit{
+text-align: center;
+padding-top:50px;
+padding-bottom: 50px;
+border: rgba(0, 0, 0, 0.267);
+}

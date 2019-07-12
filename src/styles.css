@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css?family=Chewy&display=swap');
+
+body{
+    background-image: url("src/app/942812-widescreen-dinner-wallpapers-1920x1080-for-4k.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1{
+    text-align: center;
+    color: rgb(252, 0, 0);
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Chewy', cursive;
+    font-size: 50px;
+
+}
+h2{
+    color:rgb(252, 0, 0);
+    text-align:left; 
+}
